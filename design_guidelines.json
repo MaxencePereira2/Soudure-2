@@ -1,0 +1,182 @@
+{
+  "project_identity": {
+    "name": "Welding Training Platform",
+    "persona": "The Industrial Artisan",
+    "emotional_tone": "Authoritative, Tactile, Precision-Oriented, Safe, High-End Engineering",
+    "target_audience": "Novice welding students and professionals in France",
+    "aesthetic_archetype": "Dark Industrial & Fire",
+    "core_values": [
+      "Safety First",
+      "Technical Precision",
+      "Hands-on Mastery",
+      "Industrial Elegance"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Bebas Neue, sans-serif",
+      "weights": ["400"],
+      "usage": "Page titles, Section headers, Hero text",
+      "letter_spacing": "tracking-wide",
+      "transform": "uppercase"
+    },
+    "body": {
+      "font_family": "IBM Plex Sans, sans-serif",
+      "weights": ["300", "400", "500", "600"],
+      "usage": "Paragraphs, UI elements, Data tables",
+      "line_height": "leading-relaxed"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Technical specs, Numerical data, Code snippets"
+    },
+    "scale": {
+      "h1": "text-6xl md:text-8xl",
+      "h2": "text-4xl md:text-5xl",
+      "h3": "text-2xl md:text-3xl",
+      "body_lg": "text-lg",
+      "body_base": "text-base",
+      "caption": "text-sm text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": {
+        "primary": "#0f1012",
+        "secondary": "#1a1d22",
+        "tertiary": "#272a30"
+      },
+      "foreground": {
+        "primary": "#ffffff",
+        "secondary": "#a1a1aa",
+        "muted": "#52525b"
+      },
+      "brand": {
+        "primary": "#e8823a",
+        "secondary": "#f5a623",
+        "hover": "#fb923c"
+      },
+      "status": {
+        "success": "#22c55e",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "info": "#3b82f6"
+      },
+      "border": {
+        "default": "rgba(255, 255, 255, 0.1)",
+        "active": "rgba(232, 130, 58, 0.5)"
+      }
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(232, 130, 58, 0.15) 0%, rgba(15, 16, 18, 0) 70%)",
+      "metal_sheen": "linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%)"
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_system": "Bento Grid (Mode A for Marketing, Mode B for Data)",
+    "spacing": {
+      "section_gap": "gap-12 md:gap-24",
+      "component_padding": "p-6 md:p-8"
+    },
+    "sidebar": {
+      "width": "w-64",
+      "behavior": "Sticky, collapsible on mobile"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#e8823a] text-white hover:bg-[#fb923c] rounded-none uppercase tracking-widest font-bold px-8 py-3 transition-all duration-300 shadow-[0_0_15px_rgba(232,130,58,0.3)] hover:shadow-[0_0_25px_rgba(232,130,58,0.5)]",
+      "secondary": "bg-transparent border border-white/20 text-white hover:border-[#e8823a] hover:text-[#e8823a] rounded-none uppercase tracking-widest px-8 py-3 transition-all duration-300",
+      "ghost": "text-gray-400 hover:text-white hover:bg-white/5 rounded-none"
+    },
+    "cards": {
+      "industrial": "bg-[#1a1d22] border border-white/10 p-6 relative overflow-hidden group hover:border-[#e8823a]/50 transition-colors duration-300",
+      "feature": "bg-transparent border-l-2 border-[#e8823a] pl-6 py-2"
+    },
+    "inputs": {
+      "default": "bg-[#0f1012] border border-white/10 focus:border-[#e8823a] focus:ring-1 focus:ring-[#e8823a] rounded-none text-white placeholder:text-gray-600"
+    },
+    "navigation": {
+      "sidebar_link": "flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 border-l-2 border-transparent hover:border-[#e8823a] transition-all duration-200 font-medium"
+    }
+  },
+  "visual_enhancers": {
+    "effects": [
+      "Sparks Particle System (Hero Section)",
+      "Subtle Noise Overlay (Global Background)",
+      "Orange Glow on Active Elements"
+    ],
+    "textures": {
+      "noise": "url('/assets/noise.png') opacity-5",
+      "grid": "linear-gradient(to right, #272a30 1px, transparent 1px), linear-gradient(to bottom, #272a30 1px, transparent 1px)"
+    },
+    "animations": {
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300",
+      "glow_pulse": "animate-pulse shadow-[0_0_10px_#e8823a]"
+    }
+  },
+  "media": {
+    "image_style": "High contrast, desaturated background with selective saturation on fire/sparks. Sharp edges. No rounded corners greater than 4px.",
+    "video_embeds": "16:9 aspect ratio, minimal controls, custom poster image",
+    "icons": {
+      "library": "Lucide React",
+      "style": "Stroke width 1.5px, sharp edges preferred"
+    }
+  },
+  "image_urls": {
+    "hero_backgrounds": [
+      "https://images.unsplash.com/photo-1720036236697-018370867320?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHx3ZWxkZXIlMjBpbmR1c3RyaWFsJTIwZGFyayUyMGZhY3RvcnklMjBzcGFya3N8ZW58MHx8fHwxNzczMTcxNDU0fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1720036236694-d0a231c52563?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHx3ZWxkZXIlMjBpbmR1c3RyaWFsJTIwZGFyayUyMGZhY3RvcnklMjBzcGFya3N8ZW58MHx8fHwxNzczMTcxNDU0fDA&ixlib=rb-4.1.0&q=85"
+    ],
+    "welding_processes": [
+      "https://images.unsplash.com/photo-1548945665-56d2712b4986?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHx0aWclMjB3ZWxkaW5nJTIwdG9yY2glMjBtaWclMjB3ZWxkaW5nJTIwZ3VuJTIwc3RpY2slMjB3ZWxkaW5nJTIwZWxlY3Ryb2RlfGVufDB8fHx8MTc3MzE3MTQ1NXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1665492100272-75508f731649?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHx0aWclMjB3ZWxkaW5nJTIwdG9yY2glMjBtaWclMjB3ZWxkaW5nJTIwZ3VuJTIwc3RpY2slMjB3ZWxkaW5nJTIwZWxlY3Ryb2RlfGVufDB8fHx8MTc3MzE3MTQ1NXww&ixlib=rb-4.1.0&q=85"
+    ],
+    "safety_ppe": [
+      "https://images.unsplash.com/photo-1602604886340-f908a643c742?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHx3ZWxkaW5nJTIwbWFzayUyMGxlYXRoZXIlMjBnbG92ZXMlMjBzYWZldHklMjBnbGFzc2VzJTIwcHBlfGVufDB8fHx8MTc3MzE3MTQ1NHww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1602604993745-df3d9fa12c4b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHw0fHx3ZWxkaW5nJTIwbWFzayUyMGxlYXRoZXIlMjBnbG92ZXMlMjBzYWZldHklMjBnbGFzc2VzJTIwcHBlfGVufDB8fHx8MTc3MzE3MTQ1NHww&ixlib=rb-4.1.0&q=85"
+    ],
+    "textures": [
+      "https://images.unsplash.com/photo-1763269546708-a3590bc5441f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxicnVzaGVkJTIwc3RlZWwlMjBtZXRhbCUyMHRleHR1cmUlMjBkYXJrJTIwaW5kdXN0cmlhbHxlbnwwfHx8fDE3NzMxNzE0NTZ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1764083292858-1576bce9e678?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxicnVzaGVkJTIwc3RlZWwlMjBtZXRhbCUyMHRleHR1cmUlMjBkYXJrJTIwaW5kdXN0cmlhbHxlbnwwfHx8fDE3NzMxNzE0NTZ8MA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install dependencies: npm install react-router-dom lucide-react framer-motion clsx tailwind-merge @radix-ui/react-slot tsparticles @tsparticles/react @tsparticles/slim",
+      "Configure Tailwind colors in tailwind.config.js to match the 'colors' section exactly.",
+      "Add 'Bebas Neue' and 'IBM Plex Sans' from Google Fonts to index.css."
+    ],
+    "implementation_rules": [
+      "Use the Sidebar Layout as the main shell for the application.",
+      "Ensure all interactive elements have hover states defined in the 'components' section.",
+      "Use the 'Bento Grid' strategy for the 'Other Processes', 'Tools', and 'History' sections.",
+      "Implement the 'Sparks' effect ONLY on the Hero section of the Home page to avoid performance issues.",
+      "All text MUST be in French as per the problem statement."
+    ],
+    "accessibility_check": [
+      "Ensure all images have alt text in French.",
+      "Check contrast ratios for orange text on dark backgrounds (use larger font sizes if needed).",
+      "All interactive elements must be keyboard navigable."
+    ]
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Components MUST use named exports (export const ComponentName = ...).",
+    "Pages MUST use default exports (export default function PageName() {...}).",
+    "Use 'sonner' for toasts."
+  ]
+}
