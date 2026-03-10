@@ -1,61 +1,55 @@
 # PRD — Site de Formation Soudure
 
 ## Problem Statement
-Site web pedagogique multi-pages sur les techniques de soudure en francais. Theme industriel sombre avec accents ambre/feu. 12+ sections couvrant histoire, securite, procedes (SMAW, MIG/MAG, TIG), metallurgie, normes, outils, tables de parametres.
+Site web pedagogique multi-pages sur les techniques de soudure en francais. Theme industriel sombre avec accents ambre/feu. 22 sections couvrant tous les aspects de la metallerie et du soudage.
 
 ## Architecture
 - **Frontend**: React SPA avec hash routing (compatible GitHub Pages)
 - **Backend**: Non utilise (contenu statique)
-- **Base de donnees**: Non utilisee
-
-## User Personas
-- Etudiants novices en soudure (CTT SIGMA Clermont-Ferrand)
-- Formateurs professionnels
-- Soudeurs en reconversion
-
-## Core Requirements (Static)
-- 15 pages de contenu technique en francais
-- Navigation sidebar avec routing hash
-- Tables de parametres interactives avec filtrage
-- Videos YouTube integrees
-- Effet particules spark sur hero
-- Theme industriel sombre (#0f1012, #e8823a)
-- Responsive mobile/tablet/desktop
 
 ## What's Been Implemented (Dec 2025)
-- [x] Home page avec hero, sparks, navigation cards, images alesium.fr
-- [x] Histoire de la Soudure (timeline interactive)
-- [x] Securite & EPI (9 items detailles)
-- [x] SMAW/Electrode Enrobee (parametres, defauts, technique)
-- [x] MIG/MAG (parametres, gaz, modes de transfert)
-- [x] TIG/GTAW (tungstenes, technique deux mains)
-- [x] Autres Procedes (8 procedes industriels)
-- [x] Metallurgie Utile (ZAT, Ceq, aciers, alu, inox)
-- [x] Preparation & Assemblage (chanfreins, joints, symboles ISO)
-- [x] Positions de Soudage (nomenclature ISO, conseils)
-- [x] Normes & Qualite (WPS, PQR, ISO 9606, CND)
-- [x] Outils & Outillage (7 categories)
-- [x] Tables & Fiches (4 tables filtrables)
-- [x] Module SIGMA 20H (10 seances expandables)
-- [x] Evolutions & Futur (8 thematiques)
-- [x] Sidebar navigation sticky
-- [x] Back to top button
-- [x] Reading progress bar
-- [x] Mobile responsive
+### Pages (22 sections) :
+1. Accueil (hero sparks, navigation, galerie images Alesium)
+2. Histoire de la Soudure (timeline interactive + video)
+3. Securite & EPI (9 items detailles + video)
+4. CAO Specifique Soudure (logiciels, regles conception, DFM)
+5. Decoupe Laser (principe, gaz, regles conception, capacites)
+6. Decoupe Plasma (principe, comparaison, regles, securite)
+7. Pliage CNC (principe, regles, table V/epaisseur)
+8. Preparation & Assemblage (chanfreins, joints, symboles ISO)
+9. Principe des Marbres (types, accessoires, methodologie)
+10. Mecano-Assemblage (flux production, bonnes pratiques)
+11. SMAW / Electrode Enrobee (parametres, defauts, technique)
+12. MIG / MAG (parametres, gaz, modes transfert)
+13. TIG / GTAW (tungstenes, technique deux mains)
+14. Autres Procedes (8 procedes industriels)
+15. Positions de Soudage (nomenclature ISO, conseils)
+16. Deformation des Pieces (types, facteurs, prevention, redressage)
+17. Metallurgie Utile (ZAT, Ceq, aciers, alu, inox)
+18. Normes & Qualite (WPS, PQR, ISO 9606, CND)
+19. Outils & Outillage (7 categories)
+20. Tables & Fiches (4 tables filtrables)
+21. Module Formation 20H (10 seances expandables)
+22. Evolutions & Futur (8 thematiques)
+
+### Fonctionnalites :
+- Navigation sidebar avec 22 items
+- Hash routing (#cao, #decoupe_laser, etc.)
+- Videos YouTube verifiees et fonctionnelles
+- Images Alesium.fr + Unsplash
+- Liens directs Alesium, Gracz, Claustra.gracz
+- Tables filtrables avec recherche
+- Progression de lecture, back to top
+- Responsive mobile/desktop
+- Toutes mentions CTT SIGMA supprimees
 
 ## Prioritized Backlog
-### P0 (Fait)
-- Tous les contenus des 15 pages
+### P1
+- Ajouter accents francais (e, a, c) aux textes
+- Tables supplementaires (prechauffage, compatibilite)
+- Mode quiz/QCM interactif
 
-### P1 (Prochaines etapes)
-- Ajout d'accents (e, a, c) aux textes francais
-- More YouTube videos per section
-- Print-friendly CSS
-- Table des temperatures de prechauffage
-- Table compatibilite metal base/apport/gaz
-
-### P2 (Ameliorations)
+### P2
+- Recherche globale dans le contenu
+- Version imprimable CSS
 - Animations d'entree par section
-- Mode quiz interactif pour auto-evaluation
-- Recherche globale dans tout le contenu
-- Dark/light mode toggle

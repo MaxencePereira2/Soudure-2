@@ -16,7 +16,7 @@ export default function DecoupeLaserPage() {
       {/* Image */}
       <div className="mb-16 grid grid-cols-2 gap-2">
         <div className="aspect-video overflow-hidden border border-white/5">
-          <img src="https://images.unsplash.com/photo-1764114544671-dd5fce132e43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzR8MHwxfHNlYXJjaHwxfHxsYXNlciUyMGN1dHRpbmclMjBtZXRhbCUyMGluZHVzdHJpYWx8ZW58MHx8fHwxNzczMTczMTgzfDA&ixlib=rb-4.1.0&q=85" alt="Decoupe laser de tole acier" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Decoupe laser de tole acier" className="w-full h-full object-cover" />
         </div>
         <div className="aspect-video overflow-hidden border border-white/5">
           <img src="https://www.alesium.fr/assets/projets/1-optimisation-du-temps-de-fabrication-descalier-en-acier/1a.png" alt="Pieces decoupees laser - Alesium" className="w-full h-full object-cover" />
