@@ -23,6 +23,19 @@ export default function OutilsPage() {
         <p className="text-gray-400 leading-relaxed text-lg">L'atelier du soudeur ne se limite pas au poste de soudage. Meuleuses, scies, perceuses, presses, outils de mesure : voici l'outillage complet d'un atelier de metallerie.</p>
       </div>
 
+      {/* Images outils */}
+      <div className="mb-16 grid grid-cols-3 gap-2">
+        <div className="aspect-square overflow-hidden border border-white/5">
+          <img src="https://images.pexels.com/photos/4315560/pexels-photo-4315560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Meuleuse d'angle en action sur metal" className="w-full h-full object-cover" />
+        </div>
+        <div className="aspect-square overflow-hidden border border-white/5">
+          <img src="https://images.unsplash.com/photo-1513206837745-ad29c1493bc7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHx3ZWxkaW5nJTIwZXF1aXBtZW50JTIwdG9vbHMlMjB3b3Jrc2hvcCUyMGdyaW5kZXIlMjBjYWxpcGVyfGVufDB8fHx8MTc3MzE3NDkwNHww&ixlib=rb-4.1.0&q=85" alt="Meuleuse d'angle et disques" className="w-full h-full object-cover" />
+        </div>
+        <div className="aspect-square overflow-hidden border border-white/5">
+          <img src="https://images.unsplash.com/photo-1759159091728-e2c87b9d9315?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHx3ZWxkaW5nJTIwZXF1aXBtZW50JTIwdG9vbHMlMjB3b3Jrc2hvcCUyMGdyaW5kZXIlMjBjYWxpcGVyfGVufDB8fHx8MTc3MzE3NDkwNHww&ixlib=rb-4.1.0&q=85" alt="Serre-joints et brides de fixation industriels" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       <div className="space-y-8">
         {OUTILS.map((cat, i) => (
           <div key={i} className="bg-[#1a1d22] border border-white/5 p-6" data-testid={`outil-cat-${i}`}>

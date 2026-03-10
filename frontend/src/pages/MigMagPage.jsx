@@ -31,7 +31,7 @@ export default function MigMagPage() {
 
       {/* Image */}
       <div className="mb-16 aspect-video overflow-hidden border border-white/5">
-        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Soudage MIG/MAG en atelier" className="w-full h-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1734888369524-bd915004d0c3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxNSUclMjB3ZWxkaW5nJTIwc3RlZWwlMjBzcGFya3MlMjB3ZWxkZXIlMjBtYXNrfGVufDB8fHx8MTc3MzE3NTA1NHww&ixlib=rb-4.1.0&q=85" alt="Soudage MIG/MAG semi-automatique avec torche" className="w-full h-full object-cover" />
       </div>
 
       <section className="mb-16">

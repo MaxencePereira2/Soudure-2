@@ -34,10 +34,10 @@ export default function TigPage() {
       {/* Image */}
       <div className="mb-16 grid grid-cols-2 gap-2">
         <div className="aspect-video overflow-hidden border border-white/5">
-          <img src="https://www.alesium.fr/assets/projets/3-dveloppement-dun-cadre-de-vtt-de-descente/1c.png" alt="Soudure TIG sur cadre VTT CroMo - Alesium" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1665492100272-75508f731649?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxUSUclMjB3ZWxkaW5nJTIwdG9yY2glMjBoYW5kJTIwY2xvc2UlMjB1cCUyMGFyZ29ufGVufDB8fHx8MTc3MzE3NDg4OXww&ixlib=rb-4.1.0&q=85" alt="Torche TIG en action - soudure de precision" className="w-full h-full object-cover" />
         </div>
         <div className="aspect-video overflow-hidden border border-white/5">
-          <img src="https://www.alesium.fr/assets/projets/5-preuve-de-concept-impression-3d-metal-par-conduction/1e.JPG" alt="TIG precision - Alesium" className="w-full h-full object-cover" />
+          <img src="https://www.alesium.fr/assets/projets/3-dveloppement-dun-cadre-de-vtt-de-descente/1c.png" alt="Soudure TIG sur cadre VTT CroMo - Alesium" className="w-full h-full object-cover" />
         </div>
       </div>
 

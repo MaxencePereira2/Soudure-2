@@ -39,7 +39,7 @@ export default function SmawPage() {
 
       {/* Image */}
       <div className="mb-16 aspect-video overflow-hidden border border-white/5">
-        <img src="https://images.unsplash.com/photo-1547555706-54bcf05bbad1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMGRlZm9ybWF0aW9uJTIwd2FycGluZyUyMHN0ZWVsJTIwd2VsZGluZyUyMGhlYXR8ZW58MHx8fHwxNzczMTczMjAzfDA&ixlib=rb-4.1.0&q=85" alt="Soudage a l'electrode enrobee - SMAW" className="w-full h-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Soudage a l'electrode enrobee - SMAW" className="w-full h-full object-cover" />
       </div>
 
       {/* Principe */}

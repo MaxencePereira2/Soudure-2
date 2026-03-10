@@ -16,10 +16,10 @@ export default function MarbresPage() {
       {/* Image */}
       <div className="mb-16 grid grid-cols-2 gap-2">
         <div className="aspect-video overflow-hidden border border-white/5">
-          <img src="https://www.alesium.fr/assets/projets/2-fabrication-dune-ligne-de-production/1b.jpg" alt="Marbre de soudage en atelier - Alesium" className="w-full h-full object-cover" />
+          <img src="https://www.siegmund.com/Startseite/Teaser/55853/image-thumb__55853__webp/Schweisstische.74437411.webp" alt="Table de soudage Siegmund System 28" className="w-full h-full object-cover" />
         </div>
         <div className="aspect-video overflow-hidden border border-white/5">
-          <img src="https://www.alesium.fr/assets/projets/6-supression-des-jeux-mcanique-dans-robot-parrallle-3-axe/2f.JPG" alt="Assemblage sur table de soudage - Alesium" className="w-full h-full object-cover" />
+          <img src="https://www.siegmund.com/Startseite/Teaser/1126/image-thumb__1126__webp/Praxisbeispiele.2a46f737.webp" alt="Applications pratiques tables Siegmund" className="w-full h-full object-cover" />
         </div>
       </div>
 
@@ -37,6 +37,19 @@ export default function MarbresPage() {
               <p className="text-gray-500 text-sm leading-relaxed">{t.desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* Siegmund images */}
+        <div className="mt-6 grid grid-cols-3 gap-2">
+          <div className="aspect-square overflow-hidden border border-white/5">
+            <img src="https://www.siegmund.com/Startseite/Neue%20Produkte/69039/image-thumb__69039__webp/Smart-Leg.784e4b1e.webp" alt="Siegmund Smart Leg table de soudage" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-square overflow-hidden border border-white/5">
+            <img src="https://www.siegmund.com/Startseite/Boxen/1198/image-thumb__1198__webp/Siegmund-Katalog.376e6321.webp" alt="Catalogue Siegmund accessoires" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-square overflow-hidden border border-white/5">
+            <img src="https://www.siegmund.com/Startseite/Boxen/55849/image-thumb__55849__webp/Konfigurator.df97e248.webp" alt="Configurateur Siegmund table de soudage" className="w-full h-full object-cover" />
+          </div>
         </div>
       </section>
 
@@ -106,7 +119,7 @@ export default function MarbresPage() {
 
       <div>
         <h2 className="text-3xl text-white mb-6">Video : Tables de soudage et accessoires</h2>
-        <div className="video-container"><iframe src="https://www.youtube.com/embed/5Hc--MrMITs" title="Tables de soudage" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
+        <div className="video-container"><iframe src="https://www.youtube.com/embed/J1kleHAJaFo" title="Tables de soudage Siegmund" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
       </div>
     </div>
   );
