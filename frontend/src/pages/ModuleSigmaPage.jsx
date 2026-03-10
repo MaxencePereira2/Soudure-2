@@ -7,7 +7,7 @@ const SESSIONS = [
   { num: 4, titre: "MIG/MAG — Decouverte", duree: "2h", objectifs: ["Principe MIG/MAG, gaz, fil, modes de transfert", "Reglage d'un poste synergique", "Premiers cordons a plat", "Comparaison avec SMAW"], equipement: "Poste MIG/MAG synergique, fil 0.8, Ar/CO2", eval: "Cordon droit PA — regularite et absence de porosites" },
   { num: 5, titre: "MIG/MAG — Assemblages", duree: "2h", objectifs: ["Assemblage bout a bout sur toles 3mm", "Assemblage en T", "Reglage parametres manuels (V, vitesse fil)", "Entretien torche et devidoir"], equipement: "Poste MIG/MAG, toles 3mm decoupees", eval: "Assemblage bout a bout — etancheite et penetration" },
   { num: 6, titre: "TIG — Initiation", duree: "2h", objectifs: ["Principe TIG, types de tungstene, gaz", "Affutage du tungstene", "Premiers bains de fusion sans apport (autogene)", "Premieres lignes avec baguette d'apport"], equipement: "Poste TIG DC, tungstene 2.4, baguettes ER70S", eval: "Ligne de fusion autogene — regularite" },
-  { num: 7, titre: "TIG — Technique deux mains", duree: "2h", objectifs: ["Coordination torche + baguette", "Cordons sur acier avec apport", "Pregaz et postgaz", "Debut inox si possible"], equipement: "Poste TIG, baguettes acier et inox 316L", eval: "Cordon avec apport PA — regularity et couleur" },
+  { num: 7, titre: "TIG — Technique deux mains", duree: "2h", objectifs: ["Coordination torche + baguette", "Cordons sur acier avec apport", "Pregaz et postgaz", "Debut inox si possible"], equipement: "Poste TIG, baguettes acier et inox 316L", eval: "Cordon avec apport PA — regularite et couleur" },
   { num: 8, titre: "Metallurgie & Preparation", duree: "2h", objectifs: ["ZAT, carbone equivalent, aciers courants", "Chanfreins : types et realisation a la meuleuse", "Degraissage, pointage, bridage", "Symboles de soudage ISO 2553 (lecture plan)"], equipement: "Meuleuse, equerres, brides, plans", eval: "QCM metallurgie + preparation d'un chanfrein V" },
   { num: 9, titre: "Positions & Qualite", duree: "2h", objectifs: ["Soudage en PF (vertical montant) — SMAW ou MIG", "Comportement du bain en position", "Notions de qualite : ISO 5817, defauts courants", "Autocontrole visuel du cordon"], equipement: "Postes de soudage, plaques verticales", eval: "Cordon PF — absence de defauts majeurs" },
   { num: 10, titre: "Evaluation finale & Bilan", duree: "2h", objectifs: ["Exercice pratique : assemblage complet multi-passes", "QCM final (securite + theorie + normes)", "Bilan individuel et axes d'amelioration", "Remise des attestations de formation"], equipement: "Tous postes disponibles, choix du procede", eval: "Assemblage note + QCM 30 questions" },
@@ -15,15 +15,15 @@ const SESSIONS = [
 
 export default function ModuleSigmaPage() {
   return (
-    <div className="px-6 lg:px-12 py-16 max-w-5xl" data-testid="sigma-page">
+    <div className="px-6 lg:px-12 py-16 max-w-5xl" data-testid="formation-page">
       <div className="mb-16">
         <span className="text-[#e8823a] text-sm tracking-[0.3em] uppercase font-semibold flex items-center gap-2"><GraduationCap size={14} /> Programme</span>
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl text-white mt-4">Module SIGMA — 20H</h1>
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl text-white mt-4">Module formation — 20H</h1>
         <div className="w-16 h-0.5 bg-[#e8823a] mt-6" />
       </div>
 
       <div className="section-intro mb-16">
-        <p className="text-gray-400 leading-relaxed text-lg">Programme complet de 10 seances de 2 heures, dispense au CTT SIGMA de Clermont-Ferrand par Alesium. Chaque seance alterne theorie et pratique en atelier.</p>
+        <p className="text-gray-400 leading-relaxed text-lg">Programme complet de 10 seances de 2 heures par <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="text-[#e8823a] hover:underline">Alesium</a>. Chaque seance alterne theorie et pratique en atelier.</p>
       </div>
 
       {/* Info banner */}
@@ -31,7 +31,7 @@ export default function ModuleSigmaPage() {
         {[
           { icon: Clock, label: "Duree totale", value: "20 heures" },
           { icon: Target, label: "Seances", value: "10 x 2h" },
-          { icon: GraduationCap, label: "Lieu", value: "CTT SIGMA" },
+          { icon: GraduationCap, label: "Par", value: "Alesium" },
           { icon: Wrench, label: "Procedes", value: "SMAW, MIG, TIG" },
         ].map((info, i) => {
           const Icon = info.icon;
@@ -93,15 +93,16 @@ export default function ModuleSigmaPage() {
       {/* Contact */}
       <div className="mt-8 bg-[#1a1d22] border border-white/5 p-6">
         <h3 className="text-white font-['Bebas_Neue'] text-lg tracking-wider mb-2">Contact & informations</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
           <div>
-            <span className="text-gray-600 text-xs uppercase">Organisme</span>
-            <p className="text-gray-400 mt-1">CTT SIGMA — Clermont-Ferrand</p>
-          </div>
-          <div>
-            <span className="text-gray-600 text-xs uppercase">Intervenant</span>
+            <span className="text-gray-600 text-xs uppercase">Formation par</span>
             <p className="text-gray-400 mt-1">Alesium — Maxence Pereira</p>
             <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="text-[#e8823a] text-xs hover:underline">www.alesium.fr</a>
+          </div>
+          <div>
+            <span className="text-gray-600 text-xs uppercase">Atelier</span>
+            <a href="https://www.gracz.fr" target="_blank" rel="noopener noreferrer" className="block text-[#e8823a] text-xs hover:underline mt-1">www.gracz.fr</a>
+            <a href="https://claustra.gracz.fr" target="_blank" rel="noopener noreferrer" className="block text-[#e8823a] text-xs hover:underline mt-1">claustra.gracz.fr</a>
           </div>
         </div>
       </div>

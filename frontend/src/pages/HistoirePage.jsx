@@ -37,6 +37,11 @@ export default function HistoirePage() {
         </p>
       </div>
 
+      {/* Image */}
+      <div className="mb-16 aspect-video overflow-hidden border border-white/5">
+        <img src="https://images.unsplash.com/photo-1615219023549-5c9abdb7df9a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGRlZm9ybWF0aW9uJTIwd2FycGluZyUyMHN0ZWVsJTIwd2VsZGluZyUyMGhlYXR8ZW58MHx8fHwxNzczMTczMjAzfDA&ixlib=rb-4.1.0&q=85" alt="Soudeur au travail - histoire de la soudure" className="w-full h-full object-cover" />
+      </div>
+
       {/* Timeline */}
       <div className="relative pl-8 space-y-12" data-testid="timeline">
         <div className="timeline-line" />
@@ -82,7 +87,7 @@ export default function HistoirePage() {
         <h2 className="text-3xl text-white mb-6">En video</h2>
         <div className="video-container">
           <iframe
-            src="https://www.youtube.com/embed/bBVBWpIIz6s"
+            src="https://www.youtube.com/embed/6nmHUjMVW5Y"
             title="Histoire du soudage"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

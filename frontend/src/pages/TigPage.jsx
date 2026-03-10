@@ -31,6 +31,16 @@ export default function TigPage() {
         </p>
       </div>
 
+      {/* Image */}
+      <div className="mb-16 grid grid-cols-2 gap-2">
+        <div className="aspect-video overflow-hidden border border-white/5">
+          <img src="https://www.alesium.fr/assets/projets/3-dveloppement-dun-cadre-de-vtt-de-descente/1c.png" alt="Soudure TIG sur cadre VTT CroMo - Alesium" className="w-full h-full object-cover" />
+        </div>
+        <div className="aspect-video overflow-hidden border border-white/5">
+          <img src="https://www.alesium.fr/assets/projets/5-preuve-de-concept-impression-3d-metal-par-conduction/1e.JPG" alt="TIG precision - Alesium" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       {/* Principe */}
       <section className="mb-16">
         <h2 className="text-3xl text-white mb-6">Principe</h2>
@@ -129,7 +139,7 @@ export default function TigPage() {
 
       <div>
         <h2 className="text-3xl text-white mb-6">Video : Soudage TIG</h2>
-        <div className="video-container"><iframe src="https://www.youtube.com/embed/8UVjIoOFGLc" title="Soudage TIG technique" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
+        <div className="video-container"><iframe src="https://www.youtube.com/embed/tGKmCfl0mTk" title="Soudage TIG technique" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
       </div>
     </div>
   );

@@ -84,7 +84,7 @@ export default function PositionsPage() {
 
       <div>
         <h2 className="text-3xl text-white mb-6">Video : Positions de soudage</h2>
-        <div className="video-container"><iframe src="https://www.youtube.com/embed/Djh-nQ3NUHU" title="Positions de soudage" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
+        <div className="video-container"><iframe src="https://www.youtube.com/embed/PsiFq6vGMFE" title="Positions de soudage" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
       </div>
     </div>
   );

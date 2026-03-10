@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { ShieldAlert, Zap, Settings2, Flame, History, Layers, FlaskConical, Wrench, GraduationCap, Rocket, ArrowRight } from "lucide-react";
+import { ShieldAlert, Zap, Settings2, Flame, History, Layers, FlaskConical, Wrench, GraduationCap, Rocket, ArrowRight, PenTool, Scissors, Waves, FoldVertical, Box, Grid3X3, Thermometer } from "lucide-react";
 
 const SPARKS_COUNT = 30;
 
@@ -28,13 +28,20 @@ const SparkEffect = () => {
 const CHAPTERS = [
   { id: "histoire", icon: History, title: "Histoire de la Soudure", desc: "Des forgerons antiques au soudage laser" },
   { id: "securite", icon: ShieldAlert, title: "Securite & EPI", desc: "Equipements obligatoires et regles d'atelier" },
-  { id: "smaw", icon: Zap, title: "SMAW / Electrode Enrobee", desc: "Arc electrique et electrode fusible" },
+  { id: "cao", icon: PenTool, title: "CAO pour Soudure", desc: "Conception et mise en plan d'ensembles soudes" },
+  { id: "decoupe_laser", icon: Scissors, title: "Decoupe Laser", desc: "Principe et regles de conception" },
+  { id: "decoupe_plasma", icon: Waves, title: "Decoupe Plasma", desc: "Decoupe thermique polyvalente" },
+  { id: "pliage", icon: FoldVertical, title: "Pliage CNC", desc: "Presse plieuse et regles de conception" },
+  { id: "marbres", icon: Grid3X3, title: "Principe des Marbres", desc: "Tables de soudage et gabarits" },
+  { id: "mecano", icon: Box, title: "Mecano-Assemblage", desc: "Du debit a l'ensemble fini" },
+  { id: "smaw", icon: Zap, title: "SMAW / Electrode", desc: "Arc electrique et electrode fusible" },
   { id: "migmag", icon: Settings2, title: "MIG / MAG (GMAW)", desc: "Fil continu et protection gazeuse" },
   { id: "tig", icon: Flame, title: "TIG / GTAW", desc: "Tungstene non fusible, precision maximale" },
   { id: "autres", icon: Layers, title: "Autres Procedes", desc: "Laser, friction, plasma, resistance" },
+  { id: "deformation", icon: Thermometer, title: "Deformation des Pieces", desc: "Retrait, contraintes, prevention" },
   { id: "metallurgie", icon: FlaskConical, title: "Metallurgie Utile", desc: "ZAT, aciers, aluminium, traitements" },
   { id: "outils", icon: Wrench, title: "Outils & Outillage", desc: "Meuleuses, scies, presses, controle" },
-  { id: "sigma", icon: GraduationCap, title: "Module SIGMA 20H", desc: "Programme complet des 10 seances" },
+  { id: "formation", icon: GraduationCap, title: "Module Formation 20H", desc: "Programme complet des 10 seances" },
   { id: "evolutions", icon: Rocket, title: "Evolutions & Futur", desc: "Robotique, IA, realite virtuelle" },
 ];
 
@@ -58,27 +65,22 @@ export default function HomePage({ onNavigate }) {
     <div data-testid="home-page">
       {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center overflow-hidden" data-testid="hero-section">
-        {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1720036236697-018370867320?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHx3ZWxkZXIlMjBpbmR1c3RyaWFsJTIwZGFyayUyMGZhY3RvcnklMjBzcGFya3N8ZW58MHx8fHwxNzczMTcxNDU0fDA&ixlib=rb-4.1.0&q=85"
+            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?crop=entropy&cs=srgb&fm=jpg&q=85"
             alt="Soudeur en action dans un atelier industriel"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f1012] via-[#0f1012]/70 to-transparent" />
         </div>
 
-        {/* Sparks */}
         <SparkEffect />
-
-        {/* Glow */}
         <div className="hero-gradient absolute inset-0" />
 
-        {/* Content */}
         <div ref={heroRef} className="relative z-10 max-w-4xl mx-auto px-6 py-32 lg:px-12">
           <div className="mb-6">
             <span className="inline-block text-[#e8823a] text-sm font-semibold tracking-[0.3em] uppercase mb-4">
-              Formation professionnelle — CTT SIGMA Clermont-Ferrand
+              Formation professionnelle — Soudure & metallerie
             </span>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-8xl font-normal leading-[0.95] text-white mb-8">
@@ -102,7 +104,7 @@ export default function HomePage({ onNavigate }) {
             </button>
             <button
               data-testid="see-program-btn"
-              onClick={() => onNavigate("sigma")}
+              onClick={() => onNavigate("formation")}
               className="border border-white/20 text-white uppercase tracking-[0.2em] px-8 py-4 text-sm hover:border-[#e8823a] hover:text-[#e8823a] transition-colors duration-300"
             >
               Voir le programme
@@ -110,13 +112,13 @@ export default function HomePage({ onNavigate }) {
           </div>
 
           {/* Credits */}
-          <div className="mt-16 flex items-center gap-6 opacity-50">
-            <img
-              src="https://www.alesium.fr/assets/logos/logo-alesium.png"
-              alt="Logo Alesium"
-              className="h-8 brightness-200 invert"
-            />
-            <span className="text-xs text-gray-500 tracking-wider">Par Alesium — Conseil en industrialisation</span>
+          <div className="mt-16 flex flex-wrap items-center gap-6">
+            <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity duration-300">
+              <img src="https://www.alesium.fr/assets/logos/logo-alesium.png" alt="Logo Alesium" className="h-6 brightness-200 invert" />
+              <span className="text-xs text-gray-400">Alesium.fr</span>
+            </a>
+            <a href="https://www.gracz.fr" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#e8823a] transition-colors">Gracz.fr</a>
+            <a href="https://claustra.gracz.fr" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#e8823a] transition-colors">Claustra.gracz.fr</a>
           </div>
         </div>
       </section>
@@ -138,7 +140,6 @@ export default function HomePage({ onNavigate }) {
                 data-testid={`chapter-card-${ch.id}`}
                 onClick={() => onNavigate(ch.id)}
                 className="group bg-[#1a1d22] border border-white/5 p-6 text-left hover:border-[#e8823a]/40 transition-colors duration-300 relative overflow-hidden"
-                style={{ animationDelay: `${i * 0.05}s` }}
               >
                 <div className="absolute top-0 right-0 w-20 h-20 bg-[#e8823a]/5 rounded-bl-full group-hover:bg-[#e8823a]/10 transition-colors duration-300" />
                 <Icon size={24} className="text-[#e8823a] mb-4" />
@@ -174,6 +175,11 @@ export default function HomePage({ onNavigate }) {
             </div>
           ))}
         </div>
+        <div className="mt-6 flex flex-wrap gap-4">
+          <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="text-sm text-[#e8823a] hover:underline">Voir les projets Alesium</a>
+          <a href="https://www.gracz.fr" target="_blank" rel="noopener noreferrer" className="text-sm text-[#e8823a] hover:underline">Voir l'atelier Gracz</a>
+          <a href="https://claustra.gracz.fr" target="_blank" rel="noopener noreferrer" className="text-sm text-[#e8823a] hover:underline">Voir les claustras Gracz</a>
+        </div>
       </section>
 
       {/* FOOTER */}
@@ -181,12 +187,12 @@ export default function HomePage({ onNavigate }) {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <div className="font-['Bebas_Neue'] text-xl text-white tracking-wider">Soudure — Formation</div>
-            <p className="text-xs text-gray-600 mt-1">Module 20h — CTT SIGMA Clermont-Ferrand</p>
+            <p className="text-xs text-gray-600 mt-1">Module 20h — Formation professionnelle</p>
           </div>
           <div className="flex items-center gap-6">
             <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#e8823a] transition-colors">Alesium.fr</a>
             <a href="https://www.gracz.fr" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#e8823a] transition-colors">Gracz.fr</a>
-            <span className="text-xs text-gray-600">Par Maxence Pereira</span>
+            <a href="https://claustra.gracz.fr" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#e8823a] transition-colors">Claustra.gracz.fr</a>
           </div>
         </div>
       </footer>

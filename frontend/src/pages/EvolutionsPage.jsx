@@ -44,7 +44,7 @@ export default function EvolutionsPage() {
       {/* Video */}
       <div className="mt-16">
         <h2 className="text-3xl text-white mb-6">Video : L'avenir du soudage</h2>
-        <div className="video-container"><iframe src="https://www.youtube.com/embed/t6NHwhdF_1c" title="L'avenir du soudage industriel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
+        <div className="video-container"><iframe src="https://www.youtube.com/embed/TJWKqUycZJE" title="L'avenir du soudage industriel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
       </div>
 
       {/* Conclusion */}
@@ -52,8 +52,10 @@ export default function EvolutionsPage() {
         <h2 className="text-3xl text-white mb-4">Le soudeur de demain</h2>
         <p className="text-gray-400 leading-relaxed">Le soudeur de demain n'est pas un operateur qui sera remplace par un robot. C'est un technicien qualifie qui comprend les procedes, maitrise les parametres, lit les normes, programme les cobots et interprete les donnees qualite. La demande mondiale de soudeurs qualifies ne cesse d'augmenter. C'est un metier d'avenir, a condition de se former en continu.</p>
         <div className="mt-6 flex items-center gap-4">
-          <img src="https://www.alesium.fr/assets/logos/logo-alesium.png" alt="Alesium" className="h-6 brightness-200 invert opacity-50" />
-          <span className="text-xs text-gray-600">Formation dispensee par Alesium — CTT SIGMA Clermont-Ferrand</span>
+          <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+            <img src="https://www.alesium.fr/assets/logos/logo-alesium.png" alt="Alesium" className="h-6 brightness-200 invert" />
+          </a>
+          <span className="text-xs text-gray-600">Formation dispensee par <a href="https://www.alesium.fr" target="_blank" rel="noopener noreferrer" className="text-[#e8823a] hover:underline">Alesium</a></span>
         </div>
       </div>
     </div>

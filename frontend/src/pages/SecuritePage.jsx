@@ -200,7 +200,7 @@ export default function SecuritePage() {
         <h2 className="text-3xl text-white mb-6">Video : EPI du soudeur</h2>
         <div className="video-container">
           <iframe
-            src="https://www.youtube.com/embed/uM05J-rPKbI"
+            src="https://www.youtube.com/embed/glmtiWTNBqw"
             title="EPI du soudeur - equipements de protection"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

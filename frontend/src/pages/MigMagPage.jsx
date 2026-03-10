@@ -29,6 +29,11 @@ export default function MigMagPage() {
         <p className="text-gray-400 leading-relaxed text-lg">Le MIG/MAG est le procede le plus utilise en industrie. Un fil-electrode continu fond dans un bain protege par un gaz — inerte (MIG) ou actif (MAG). Productivite elevee, facile a automatiser.</p>
       </div>
 
+      {/* Image */}
+      <div className="mb-16 aspect-video overflow-hidden border border-white/5">
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Soudage MIG/MAG en atelier" className="w-full h-full object-cover" />
+      </div>
+
       <section className="mb-16">
         <h2 className="text-3xl text-white mb-6">MIG vs MAG</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -105,7 +110,7 @@ export default function MigMagPage() {
 
       <div>
         <h2 className="text-3xl text-white mb-6">Video : Soudage MIG/MAG</h2>
-        <div className="video-container"><iframe src="https://www.youtube.com/embed/aF1rJNqri7k" title="Soudage MIG MAG" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
+        <div className="video-container"><iframe src="https://www.youtube.com/embed/-Mp8e6gZ4Ho" title="Soudage MIG MAG" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
       </div>
     </div>
   );

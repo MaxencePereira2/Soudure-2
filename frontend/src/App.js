@@ -4,13 +4,20 @@ import { Layout } from "./components/layout/Layout";
 import HomePage from "./pages/HomePage";
 import HistoirePage from "./pages/HistoirePage";
 import SecuritePage from "./pages/SecuritePage";
+import CaoPage from "./pages/CaoPage";
+import DecoupeLaserPage from "./pages/DecoupeLaserPage";
+import DecoupeePlasmaPage from "./pages/DecoupePlasmaPage";
+import PliagePage from "./pages/PliagePage";
+import PreparationPage from "./pages/PreparationPage";
+import MarbresPage from "./pages/MarbresPage";
+import MecanoPage from "./pages/MecanoPage";
 import SmawPage from "./pages/SmawPage";
 import MigMagPage from "./pages/MigMagPage";
 import TigPage from "./pages/TigPage";
 import AutresProcedesPage from "./pages/AutresProcedesPage";
-import MetallurgiePage from "./pages/MetallurgiePage";
-import PreparationPage from "./pages/PreparationPage";
 import PositionsPage from "./pages/PositionsPage";
+import DeformationPage from "./pages/DeformationPage";
+import MetallurgiePage from "./pages/MetallurgiePage";
 import NormesPage from "./pages/NormesPage";
 import OutilsPage from "./pages/OutilsPage";
 import TablesPage from "./pages/TablesPage";
@@ -21,17 +28,24 @@ const PAGES = {
   accueil: HomePage,
   histoire: HistoirePage,
   securite: SecuritePage,
+  cao: CaoPage,
+  decoupe_laser: DecoupeLaserPage,
+  decoupe_plasma: DecoupeePlasmaPage,
+  pliage: PliagePage,
+  preparation: PreparationPage,
+  marbres: MarbresPage,
+  mecano: MecanoPage,
   smaw: SmawPage,
   migmag: MigMagPage,
   tig: TigPage,
   autres: AutresProcedesPage,
-  metallurgie: MetallurgiePage,
-  preparation: PreparationPage,
   positions: PositionsPage,
+  deformation: DeformationPage,
+  metallurgie: MetallurgiePage,
   normes: NormesPage,
   outils: OutilsPage,
   tables: TablesPage,
-  sigma: ModuleSigmaPage,
+  formation: ModuleSigmaPage,
   evolutions: EvolutionsPage,
 };
 
