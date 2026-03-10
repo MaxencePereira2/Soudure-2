@@ -1,53 +1,69 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import { Layout } from "./components/layout/Layout";
+import HomePage from "./pages/HomePage";
+import HistoirePage from "./pages/HistoirePage";
+import SecuritePage from "./pages/SecuritePage";
+import SmawPage from "./pages/SmawPage";
+import MigMagPage from "./pages/MigMagPage";
+import TigPage from "./pages/TigPage";
+import AutresProcedesPage from "./pages/AutresProcedesPage";
+import MetallurgiePage from "./pages/MetallurgiePage";
+import PreparationPage from "./pages/PreparationPage";
+import PositionsPage from "./pages/PositionsPage";
+import NormesPage from "./pages/NormesPage";
+import OutilsPage from "./pages/OutilsPage";
+import TablesPage from "./pages/TablesPage";
+import ModuleSigmaPage from "./pages/ModuleSigmaPage";
+import EvolutionsPage from "./pages/EvolutionsPage";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
+const PAGES = {
+  accueil: HomePage,
+  histoire: HistoirePage,
+  securite: SecuritePage,
+  smaw: SmawPage,
+  migmag: MigMagPage,
+  tig: TigPage,
+  autres: AutresProcedesPage,
+  metallurgie: MetallurgiePage,
+  preparation: PreparationPage,
+  positions: PositionsPage,
+  normes: NormesPage,
+  outils: OutilsPage,
+  tables: TablesPage,
+  sigma: ModuleSigmaPage,
+  evolutions: EvolutionsPage,
 };
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(() => {
+    const hash = window.location.hash.replace("#", "");
+    return hash && PAGES[hash] ? hash : "accueil";
+  });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash && PAGES[hash]) {
+        setCurrentPage(hash);
+      }
+    };
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  const handleNavigate = (pageId) => {
+    window.location.hash = pageId;
+    setCurrentPage(pageId);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const PageComponent = PAGES[currentPage] || HomePage;
+
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Layout currentPage={currentPage} onNavigate={handleNavigate}>
+      <PageComponent onNavigate={handleNavigate} />
+    </Layout>
   );
 }
 
